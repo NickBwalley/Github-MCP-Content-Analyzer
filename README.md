@@ -1,3 +1,16 @@
+# MCP GitHub Repository Analyzer
+
+A Python-based Model Context Protocol system that bridges AI language models with external content from GitHub repositories and websites. This tool leverages both MCP architecture and OpenAI's powerful language models to provide intelligent code analysis.
+
+With this tool, users can:
+
+- Enter any GitHub repository URL for automatic analysis
+- Get comprehensive summaries of codebases and their structure
+- Ask specific questions about the repository's code and documentation
+- Generate sample code snippets for new features compatible with the existing codebase
+- Receive intelligent responses based on the actual repository content combined with OpenAI's language understanding
+
+The system retrieves, processes, and indexes repository content through MCP, then uses OpenAI's intelligent LLM capabilities to generate human-like responses that accurately reflect the specific context of the loaded repository. This creates a personalized AI assistant that understands the unique aspects of any codebase you're working with.
 ## SETUP AND INSTALLATION
 
 - This will create a Conda environment in a folder named `venv` inside your current directory.
