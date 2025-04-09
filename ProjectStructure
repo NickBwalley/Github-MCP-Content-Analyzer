@@ -1,0 +1,10 @@
+mcp_flask_app/
+│
+├── app.py
+├── mcp_core.py  # (your refactored logic from earlier)
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css (optional)
+├── .env
+└── requirements.txt

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MCP GitHub Analyzer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+      textarea,
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+      }
+      .response,
+      .code {
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 6px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧠 MCP GitHub/Website Analyzer</h1>
+    <form method="POST">
+      <label>🔗 Enter GitHub/Website URL:</label>
+      <input type="text" name="source_url" value="{{ source_url }}" required />
+
+      <label>❓ Ask a question:</label>
+      <input type="text" name="query" value="{{ query }}" />
+
+      <label>🛠 Describe a feature to generate code for:</label>
+      <textarea name="feature">{{ feature }}</textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    {% if response %}
+    <h2>📘 Response:</h2>
+    <div class="response">{{ response }}</div>
+    {% endif %} {% if code_output %}
+    <h2>💡 Generated Code:</h2>
+    <div class="code">{{ code_output }}</div>
+    {% endif %}
+  </body>
+</html>
